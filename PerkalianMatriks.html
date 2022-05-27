@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<title>E41202508_Ellyana Rizkyawati_Gol.B.Bondowoso</title>
+</head>
+<center>		
+	<h1>Perkalian Matriks</h1>
+
+</center>
+	<h5>Nama	: Ellyana Rizkyawati</h5>
+	<h5>NIM		: E41202508</h5>
+	<h5>Golongan	: B Bondowoso</h5>
+<hr>
+<body>        
+<script>
+	
+	var nil1 = [[1,2],[3,4]];
+        var nil2 = [[5,8],[7,6]];
+        var hsl =  [[0,0],[0,0]];
+	
+	//Menampilkan matrik A
+        document.write("<h5>Matriks A :</h5>"); 
+        for(i=0;i<2;i++) {
+            for(j=0;j<2;j++) {
+                document.write(nil1[i][j]+"  ");
+            }
+        document.write("<br>");
+        }
+
+	//Menampilkan matrik B
+	document.write("<h5>Matriks B :</h5>"); 
+        for(i=0;i<2;i++) {
+            for(j=0;j<2;j++) {
+                document.write(nil2[i][j]+"  ");
+            }
+        document.write("<br>");
+        }
+	
+	//Proses
+        for(i=0;i<2;i++) {
+            for(j=0;j<2;j++) {
+                hsl[0][0] = nil1[0][0]*nil2[0][0] + nil1[0][1]*nil2[1][0];  
+        	hsl[0][1] = nil1[0][0]*nil2[0][1] + nil1[0][1]*nil2[1][1];
+       		hsl[1][0] = nil1[1][0]*nil2[0][0] + nil1[1][1]*nil2[1][0];
+        	hsl[1][1] = nil1[1][0]*nil2[0][1] + nil1[1][1]*nil2[1][1];
+            }
+        }
+
+	document.write("<h5>Proses Perkalian Matriks A Dan B : </h5>");
+                document.write(nil1[0][0]+"*"+nil2[0][0]+ " + " + nil1[0][1]+"*"+nil2[1][0] +" = " + hsl[0][0] + ",   ");
+		document.write(nil1[0][0]+"*"+nil2[0][1]+ " + " + nil1[0][1]+"*"+nil2[1][1] +" = " + hsl[0][1] + ",   ");
+		document.write("<br>");
+            	document.write(nil1[1][0]+"*"+nil2[0][0]+ " + " + nil1[1][1]+"*"+nil2[1][0] +" = " + hsl[1][0] + ",   ");
+		document.write(nil1[1][0]+"*"+nil2[0][1]+ " + " + nil1[1][1]+"*"+nil2[1][1] +" = " + hsl[1][1] + ",   ");
+
+            document.write("<br>");
+        
+
+	//Hasil perkalian
+        document.write("<h5>Hasil Perkalian Matriks A Dan B :</h5>");
+	hsl[0][0] = nil1[0][0]*nil2[0][0] + nil1[0][1]*nil2[1][0];  
+        hsl[0][1] = nil1[0][0]*nil2[0][1] + nil1[0][1]*nil2[1][1];
+        hsl[1][0] = nil1[1][0]*nil2[0][0] + nil1[1][1]*nil2[1][0];
+        hsl[1][1] = nil1[1][0]*nil2[0][1] + nil1[1][1]*nil2[1][1];
+       
+	for(i=0; i<2; i++) {
+            for(j=0; j<2; j++) {
+        	document.write(hsl[i][j] +"\t");
+        	} 
+       	document.write("<br>");
+        }
+        
+</script>
+
